@@ -3665,5 +3665,25 @@ window.addEventListener('DOMContentLoaded', () => {
   APP.init();
 });
 </script>
+ <script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAZ6PqUMI8HYC60-QRDZI3nogH4P9P1Gxg",
+  authDomain: "hospital-engineering-system.firebaseapp.com",
+  projectId: "hospital-engineering-system"
+};
+
+const app = initializeApp(firebaseConfig);
+
+const db = getFirestore(app);
+window.db = db;
+</script>
+
+const db = getFirestore(app);
+window.db = db;
+</body>
 </body>
 </html>
